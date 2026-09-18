@@ -1,0 +1,15 @@
+name: metaltech-aula17
+services:
+  servidor:
+    image: networkstatic/iperf3:latest
+    command: ["-s"]
+    networks: [lab]
+  cliente:
+    image: nicolaka/netshoot:latest
+    command: ["sleep", "infinity"]
+    cap_add: [NET_ADMIN]
+    networks: [lab]
+networks:
+  lab:
+    driver: bridge
+    internal: true

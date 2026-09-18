@@ -1,0 +1,80 @@
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Server listening on 5201 (test #1)
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Accepted connection from 172.30.0.3, port 49914
+servidor-1  | [  5] local 172.30.0.2 port 5201 connected to 172.30.0.3 port 38702
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-1.00   sec  1.04 MBytes  8.69 Mbits/sec  0.138 ms  27/778 (3.5%)  
+servidor-1  | [  5]   1.00-2.00   sec  1.14 MBytes  9.57 Mbits/sec  0.069 ms  38/864 (4.4%)  
+servidor-1  | [  5]   2.00-3.00   sec  1.13 MBytes  9.47 Mbits/sec  0.085 ms  45/862 (5.2%)  
+servidor-1  | [  5]   3.00-4.00   sec  1.14 MBytes  9.60 Mbits/sec  0.104 ms  35/864 (4.1%)  
+servidor-1  | [  5]   4.00-5.00   sec  1.13 MBytes  9.50 Mbits/sec  0.052 ms  43/863 (5%)  
+servidor-1  | [  5]   5.00-6.00   sec  1.13 MBytes  9.50 Mbits/sec  0.064 ms  44/864 (5.1%)  
+servidor-1  | [  5]   6.00-7.00   sec  1.15 MBytes  9.61 Mbits/sec  0.085 ms  33/863 (3.8%)  
+servidor-1  | [  5]   7.00-8.00   sec  1.14 MBytes  9.59 Mbits/sec  0.049 ms  35/863 (4.1%)  
+servidor-1  | [  5]   8.00-9.00   sec  1.13 MBytes  9.50 Mbits/sec  0.038 ms  43/863 (5%)  
+servidor-1  | [  5]   9.00-10.00  sec  1.13 MBytes  9.51 Mbits/sec  0.062 ms  43/864 (5%)  
+servidor-1  | [  5]  10.00-10.10  sec   117 KBytes  9.58 Mbits/sec  0.151 ms  3/86 (3.5%)  
+servidor-1  | - - - - - - - - - - - - - - - - - - - - - - - - -
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-10.10  sec  11.4 MBytes  9.46 Mbits/sec  0.151 ms  389/8634 (4.5%)  receiver
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Server listening on 5201 (test #2)
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Accepted connection from 172.30.0.3, port 37156
+servidor-1  | [  5] local 172.30.0.2 port 5201 connected to 172.30.0.3 port 56053
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-1.00   sec  5.10 MBytes  42.7 Mbits/sec  0.001 ms  198/3889 (5.1%)  
+servidor-1  | [  5]   1.00-2.00   sec  5.69 MBytes  47.7 Mbits/sec  0.001 ms  195/4317 (4.5%)  
+servidor-1  | [  5]   2.00-3.00   sec  5.64 MBytes  47.3 Mbits/sec  0.001 ms  229/4316 (5.3%)  
+servidor-1  | [  5]   3.00-4.00   sec  5.71 MBytes  47.9 Mbits/sec  0.004 ms  180/4312 (4.2%)  
+servidor-1  | [  5]   4.00-5.00   sec  5.70 MBytes  47.8 Mbits/sec  0.001 ms  195/4321 (4.5%)  
+servidor-1  | [  5]   5.00-6.00   sec  5.64 MBytes  47.3 Mbits/sec  0.002 ms  230/4313 (5.3%)  
+servidor-1  | [  5]   6.00-7.00   sec  5.67 MBytes  47.5 Mbits/sec  0.001 ms  212/4319 (4.9%)  
+servidor-1  | [  5]   7.00-8.00   sec  5.69 MBytes  47.7 Mbits/sec  0.002 ms  194/4313 (4.5%)  
+servidor-1  | [  5]   8.00-9.00   sec  5.66 MBytes  47.5 Mbits/sec  0.005 ms  219/4320 (5.1%)  
+servidor-1  | [  5]   9.00-10.00  sec  5.68 MBytes  47.6 Mbits/sec  0.004 ms  203/4316 (4.7%)  
+servidor-1  | [  5]  10.00-10.40  sec   574 KBytes  11.7 Mbits/sec  0.008 ms  23/429 (5.4%)  
+servidor-1  | - - - - - - - - - - - - - - - - - - - - - - - - -
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-10.40  sec  56.7 MBytes  45.7 Mbits/sec  0.008 ms  2078/43165 (4.8%)  receiver
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Server listening on 5201 (test #3)
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Accepted connection from 172.30.0.3, port 58186
+servidor-1  | [  5] local 172.30.0.2 port 5201 connected to 172.30.0.3 port 38940
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-1.00   sec  5.10 MBytes  42.8 Mbits/sec  0.003 ms  193/3889 (5%)  
+servidor-1  | [  5]   1.00-2.00   sec  5.66 MBytes  47.5 Mbits/sec  0.007 ms  216/4317 (5%)  
+servidor-1  | [  5]   2.00-3.00   sec  5.64 MBytes  47.3 Mbits/sec  0.001 ms  233/4316 (5.4%)  
+servidor-1  | [  5]   3.00-4.00   sec  5.68 MBytes  47.6 Mbits/sec  0.003 ms  205/4315 (4.8%)  
+servidor-1  | [  5]   4.00-5.00   sec  5.64 MBytes  47.3 Mbits/sec  0.001 ms  231/4318 (5.3%)  
+servidor-1  | [  5]   5.00-6.00   sec  5.67 MBytes  47.6 Mbits/sec  0.001 ms  209/4316 (4.8%)  
+servidor-1  | [  5]   6.00-7.00   sec  5.67 MBytes  47.6 Mbits/sec  0.001 ms  211/4314 (4.9%)  
+servidor-1  | [  5]   7.00-8.00   sec  5.66 MBytes  47.4 Mbits/sec  0.001 ms  221/4319 (5.1%)  
+servidor-1  | [  5]   8.00-9.00   sec  5.67 MBytes  47.6 Mbits/sec  0.001 ms  210/4316 (4.9%)  
+servidor-1  | [  5]   9.00-10.00  sec  5.67 MBytes  47.6 Mbits/sec  0.001 ms  205/4314 (4.8%)  
+servidor-1  | [  5]  10.00-10.10  sec   584 KBytes  47.4 Mbits/sec  0.001 ms  21/434 (4.8%)  
+servidor-1  | - - - - - - - - - - - - - - - - - - - - - - - - -
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-10.10  sec  56.6 MBytes  47.0 Mbits/sec  0.001 ms  2155/43168 (5%)  receiver
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Server listening on 5201 (test #4)
+servidor-1  | -----------------------------------------------------------
+servidor-1  | Accepted connection from 172.30.0.3, port 36428
+servidor-1  | [  5] local 172.30.0.2 port 5201 connected to 172.30.0.3 port 43016
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-1.00   sec  5.12 MBytes  43.0 Mbits/sec  0.001 ms  176/3887 (4.5%)  
+servidor-1  | [  5]   1.00-2.00   sec  5.70 MBytes  47.8 Mbits/sec  0.003 ms  189/4319 (4.4%)  
+servidor-1  | [  5]   2.00-3.00   sec  5.62 MBytes  47.2 Mbits/sec  0.002 ms  244/4314 (5.7%)  
+servidor-1  | [  5]   3.00-4.00   sec  5.68 MBytes  47.6 Mbits/sec  0.013 ms  204/4316 (4.7%)  
+servidor-1  | [  5]   4.00-5.00   sec  5.63 MBytes  47.3 Mbits/sec  0.001 ms  237/4316 (5.5%)  
+servidor-1  | [  5]   5.00-6.00   sec  5.66 MBytes  47.5 Mbits/sec  0.005 ms  219/4319 (5.1%)  
+servidor-1  | [  5]   6.00-7.00   sec  5.65 MBytes  47.4 Mbits/sec  0.001 ms  229/4317 (5.3%)  
+servidor-1  | [  5]   7.00-8.00   sec  5.64 MBytes  47.3 Mbits/sec  0.006 ms  233/4316 (5.4%)  
+servidor-1  | [  5]   8.00-9.00   sec  5.70 MBytes  47.8 Mbits/sec  0.002 ms  188/4316 (4.4%)  
+servidor-1  | [  5]   9.00-10.00  sec  5.69 MBytes  47.8 Mbits/sec  0.002 ms  192/4316 (4.4%)  
+servidor-1  | [  5]  10.00-10.10  sec   583 KBytes  47.5 Mbits/sec  0.005 ms  20/432 (4.6%)  
+servidor-1  | - - - - - - - - - - - - - - - - - - - - - - - - -
+servidor-1  | [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+servidor-1  | [  5]   0.00-10.10  sec  56.7 MBytes  47.1 Mbits/sec  0.005 ms  2131/43168 (4.9%)  receiver

@@ -1,0 +1,442 @@
+[
+    {
+        "Id": "319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60",
+        "Created": "2026-09-18T23:44:40.37220671Z",
+        "Path": "sleep",
+        "Args": [
+            "infinity"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 23065,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-18T23:44:40.475102712Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2298d942ce5f8e8083c036b6d62e129379998712ef78343f88d41d782d507141",
+        "ResolvConfPath": "/var/lib/docker/containers/319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60/hostname",
+        "HostsPath": "/var/lib/docker/containers/319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60/hosts",
+        "LogPath": "/var/lib/docker/containers/319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60/319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60-json.log",
+        "Name": "/metaltech-aula17-cliente-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "metaltech-aula17_lab",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": [
+                "CAP_NET_ADMIN"
+            ],
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware",
+                "/sys/devices/system/cpu/cpu0/thermal_throttle",
+                "/sys/devices/system/cpu/cpu1/thermal_throttle",
+                "/sys/devices/system/cpu/cpu2/thermal_throttle",
+                "/sys/devices/system/cpu/cpu3/thermal_throttle",
+                "/sys/devices/system/cpu/cpu4/thermal_throttle",
+                "/sys/devices/system/cpu/cpu5/thermal_throttle",
+                "/sys/devices/system/cpu/cpu6/thermal_throttle",
+                "/sys/devices/system/cpu/cpu7/thermal_throttle",
+                "/sys/devices/system/cpu/cpu8/thermal_throttle",
+                "/sys/devices/system/cpu/cpu9/thermal_throttle",
+                "/sys/devices/system/cpu/cpu10/thermal_throttle",
+                "/sys/devices/system/cpu/cpu11/thermal_throttle"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60",
+                "LowerDir": "/var/lib/docker/overlay2/3c640dd47063c7cff0e091f97044b5de35e592a5c7b280e9b5fb135b2cc4ce1d-init/diff:/var/lib/docker/overlay2/b0615c20c8ce2d77466377365078b121d866c9886c9f0922b761b7dd8b617ba3/diff:/var/lib/docker/overlay2/41bf5d0bca378fa9db3a7b3707c8e4f0e248520371fed317ad5c1b2490393a46/diff:/var/lib/docker/overlay2/0a2184e54eb2dcc604750fcb6386f165d41e7cf32ddc82a470e02644f52635ea/diff:/var/lib/docker/overlay2/7da8f7f67174a15346bf1928a8ebb98af9e80a053345d5ee047d0aad12c06fbe/diff:/var/lib/docker/overlay2/cc9ce5508ddc8b22fd0aa417d2c286d78bafde668bdb056897b77651825d2e68/diff:/var/lib/docker/overlay2/39b69bcec011ebe5643bb4456763534a1ee7c2ee115629078735b59302fd054d/diff:/var/lib/docker/overlay2/f16f5e479553bd8a43fd3af68d971911e5415e3be7a0d74ac2ce724d0dcff7ed/diff:/var/lib/docker/overlay2/e077c10ed375eb659fd1b4813997341d43f1dad0511fc4101719a93bc8cdb3b8/diff:/var/lib/docker/overlay2/56b6eb7ac8332d1d67f3413fbed884847804425be22fdef6bf33d1e6d4fcee14/diff:/var/lib/docker/overlay2/699215a4d5977052db879de5bc4eb144b495b14e54dc4a11e4d242e0c50f1d6b/diff:/var/lib/docker/overlay2/55f4c89862ff815d14282aa425d8abf7fa49705ad6e807cb04881a93b0d3c8d7/diff:/var/lib/docker/overlay2/9326b5bfc789f91da6edaeae8c96465a92beb1ea02ff316b180d4090ef303caf/diff:/var/lib/docker/overlay2/ff7c0e1c86b4ec670f33afad451add40fa61800dc1c410c29c7da77416c8329a/diff:/var/lib/docker/overlay2/c2176094f5ca5d5ec24c4c5b551d28c5675b77ffe5f417248fc2f9a77cc64e01/diff:/var/lib/docker/overlay2/93b2418c069557eba0014c3bb675d4a04a668a21392a27f380555b08d8e9cacc/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3c640dd47063c7cff0e091f97044b5de35e592a5c7b280e9b5fb135b2cc4ce1d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3c640dd47063c7cff0e091f97044b5de35e592a5c7b280e9b5fb135b2cc4ce1d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3c640dd47063c7cff0e091f97044b5de35e592a5c7b280e9b5fb135b2cc4ce1d/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "319ff49754c0",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "HOSTNAME=netshoot"
+            ],
+            "Cmd": [
+                "sleep",
+                "infinity"
+            ],
+            "Image": "nicolaka/netshoot:latest",
+            "Volumes": null,
+            "WorkingDir": "/root",
+            "Entrypoint": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "06f6722eafb3348dbf8c1deb122f4da11d1295422434bebde68dc1104d10da16",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:2298d942ce5f8e8083c036b6d62e129379998712ef78343f88d41d782d507141",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "metaltech-aula17",
+                "com.docker.compose.project.config_files": "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede",
+                "com.docker.compose.service": "cliente",
+                "com.docker.compose.version": "5.5.1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "cccfe3b834ef5337192936527a77c643da99a7358968af2b1fb72fcf5bb2dd2d",
+            "SandboxKey": "/var/run/docker/netns/cccfe3b834ef",
+            "Ports": {},
+            "Networks": {
+                "metaltech-aula17_lab": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "metaltech-aula17-cliente-1",
+                        "cliente"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0a7662bcc1e77f84e75319f508ce95ccab90b87af9726dd6441a6ad9af051d88",
+                    "EndpointID": "9cb0044619750c9c59e3e6f45fdb6a9cc4a819254621ebebef92277d7a6ecc55",
+                    "Gateway": "",
+                    "IPAddress": "172.30.0.3",
+                    "MacAddress": "c6:c8:58:03:01:ed",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "metaltech-aula17-cliente-1",
+                        "cliente",
+                        "319ff49754c0"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c",
+        "Created": "2026-09-18T23:44:40.372099855Z",
+        "Path": "iperf3",
+        "Args": [
+            "-s"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 22972,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-09-18T23:44:40.392353878Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:943a7b1140973abcf1f79b7c2dc160e47e7d3941e359610f2ac3aec37e5638fe",
+        "ResolvConfPath": "/var/lib/docker/containers/76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c/hostname",
+        "HostsPath": "/var/lib/docker/containers/76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c/hosts",
+        "LogPath": "/var/lib/docker/containers/76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c/76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c-json.log",
+        "Name": "/metaltech-aula17-servidor-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "metaltech-aula17_lab",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware",
+                "/sys/devices/system/cpu/cpu0/thermal_throttle",
+                "/sys/devices/system/cpu/cpu1/thermal_throttle",
+                "/sys/devices/system/cpu/cpu2/thermal_throttle",
+                "/sys/devices/system/cpu/cpu3/thermal_throttle",
+                "/sys/devices/system/cpu/cpu4/thermal_throttle",
+                "/sys/devices/system/cpu/cpu5/thermal_throttle",
+                "/sys/devices/system/cpu/cpu6/thermal_throttle",
+                "/sys/devices/system/cpu/cpu7/thermal_throttle",
+                "/sys/devices/system/cpu/cpu8/thermal_throttle",
+                "/sys/devices/system/cpu/cpu9/thermal_throttle",
+                "/sys/devices/system/cpu/cpu10/thermal_throttle",
+                "/sys/devices/system/cpu/cpu11/thermal_throttle"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c",
+                "LowerDir": "/var/lib/docker/overlay2/00fcbea5d7343bf14d5adf6cd7d08ee4be3fd2aaee8d84ebab5082a3412f7ee9-init/diff:/var/lib/docker/overlay2/05c7bf7bec388f41a25b6bafa92f5b4e754a5276d5fe9c87ca0b8b10c8b1ec01/diff:/var/lib/docker/overlay2/3447c6bb10d9af2901bdac5024cf5fb88ba401c93ab71d22be8e08e999124cfc/diff:/var/lib/docker/overlay2/95ad00d7aadc43b56c7e27049fa6494eaedbec4c0eb92998daf5bd101ecfc4ef/diff",
+                "MergedDir": "/var/lib/docker/overlay2/00fcbea5d7343bf14d5adf6cd7d08ee4be3fd2aaee8d84ebab5082a3412f7ee9/merged",
+                "UpperDir": "/var/lib/docker/overlay2/00fcbea5d7343bf14d5adf6cd7d08ee4be3fd2aaee8d84ebab5082a3412f7ee9/diff",
+                "WorkDir": "/var/lib/docker/overlay2/00fcbea5d7343bf14d5adf6cd7d08ee4be3fd2aaee8d84ebab5082a3412f7ee9/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "76c9e490c7d4",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "5201/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "-s"
+            ],
+            "Image": "networkstatic/iperf3:latest",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "iperf3"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "8412e5ae92936ea4b969e50dfed81efff59ed6d4ebae1e81ee613e964cb2704d",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:943a7b1140973abcf1f79b7c2dc160e47e7d3941e359610f2ac3aec37e5638fe",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "metaltech-aula17",
+                "com.docker.compose.project.config_files": "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede",
+                "com.docker.compose.service": "servidor",
+                "com.docker.compose.version": "5.5.1",
+                "maintainer": "Brent Salisbury <brent.salisbury@gmail.com>"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "ef8cdad3d78b643bbedcddb61e02e58d05c185f507aa63fda987663239651ee9",
+            "SandboxKey": "/var/run/docker/netns/ef8cdad3d78b",
+            "Ports": {
+                "5201/tcp": null
+            },
+            "Networks": {
+                "metaltech-aula17_lab": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "metaltech-aula17-servidor-1",
+                        "servidor"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "0a7662bcc1e77f84e75319f508ce95ccab90b87af9726dd6441a6ad9af051d88",
+                    "EndpointID": "450e2de013c759ec2583d8de1af21c7e3b2fe68c4d6ff7163825edbc9523fc52",
+                    "Gateway": "",
+                    "IPAddress": "172.30.0.2",
+                    "MacAddress": "46:d9:52:5b:80:02",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "metaltech-aula17-servidor-1",
+                        "servidor",
+                        "76c9e490c7d4"
+                    ]
+                }
+            }
+        }
+    }
+]

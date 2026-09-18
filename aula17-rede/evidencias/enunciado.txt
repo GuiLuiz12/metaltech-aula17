@@ -1,0 +1,295 @@
+## Objetivos da prática
+
+Ao final desta atividade, a dupla deverá ser capaz de:
+
+- medir **latência, perda de pacotes, jitter e throughput**;
+- utilizar `ping`, `mtr` e `iperf3`;
+- registrar resultados de forma estruturada;
+- comparar valores coletados com a baseline proposta na Aula 16;
+- identificar desvios e possíveis causas;
+- transformar medições em evidências para o Painel de Governança.
+
+## 🧩 Situação-problema
+
+A MetalTech recebeu reclamações de lentidão e instabilidade em aplicações internas. O monitoramento aponta variações de desempenho, mas a equipe ainda não possui dados suficientes para determinar se o comportamento está dentro do esperado.
+
+> **Missão da equipe:** coletar evidências de rede, construir uma baseline inicial e identificar situações que merecem investigação.
+> 
+
+## 🏗️ Arquitetura do laboratório
+
+A prática poderá ser executada com duas máquinas físicas, duas VMs ou dois containers na mesma rede.
+
+```mermaid
+flowchart LR
+A["Cliente de testes"] -->|ping / mtr| B["Servidor / destino"]
+A -->|iperf3 TCP/UDP| B
+B --> C["Resultados"]
+C --> D["Baseline"]
+D --> E["KPIs / KRIs"]
+```
+
+## 🧰 Ferramentas utilizadas
+
+- `ping`
+- `mtr`
+- `iperf3`
+- planilha ou tabela para registro dos resultados
+- opcionalmente Docker para criar os hosts de teste
+
+## 1. Preparação do ambiente
+
+### Opção A — Linux
+
+```bash
+sudo apt update
+sudo apt install -y iputils-ping mtr-tiny iperf3
+```
+
+### Opção B — Docker
+
+Crie a estrutura:
+
+```
+aula17-rede/
+└── docker-compose.yml
+```
+
+Utilize o seguinte arquivo:
+
+```yaml
+services:
+  servidor:
+    image: networkstatic/iperf3
+    container_name: servidor-iperf
+    command: -s
+    networks:
+      - lab
+
+  cliente:
+    image: nicolaka/netshoot
+    container_name: cliente-rede
+    command: sleep infinity
+    networks:
+      - lab
+
+networks:
+  lab:
+    driver: bridge
+```
+
+Suba o ambiente:
+
+```bash
+docker compose up -d
+```
+
+Valide:
+
+```bash
+docker compose ps
+```
+
+## 2. Medição de latência
+
+Execute no cliente:
+
+```bash
+ping -c 20 servidor-iperf
+```
+
+Registre:
+
+- quantidade de pacotes enviados;
+- quantidade recebida;
+- perda percentual;
+- RTT mínimo;
+- RTT médio;
+- RTT máximo.
+
+### Perguntas para análise
+
+1. O RTT permaneceu estável?
+2. Existe grande diferença entre mínimo e máximo?
+3. O valor está coerente com o tipo de ambiente utilizado?
+
+## 3. Medição de perda de pacotes
+
+A própria saída do `ping` mostrará a perda.
+
+Exemplo de cálculo:
+
+$$
+Perda\;(\%) = \frac{Enviados - Recebidos}{Enviados} \times 100
+$$
+
+Registre o valor obtido.
+
+<aside>
+💡
+
+Em uma rede local saudável, normalmente espera-se perda muito baixa ou inexistente. O mais importante nesta disciplina, porém, é comparar o resultado com a **baseline do ambiente**, e não apenas com um valor genérico.
+
+</aside>
+
+## 4. Análise de rota com MTR
+
+Em Linux:
+
+```bash
+mtr -rw servidor-iperf
+```
+
+Se o laboratório utilizar um destino externo autorizado:
+
+```bash
+mtr -rw 8.8.8.8
+```
+
+Observe:
+
+- número de saltos;
+- perda por salto;
+- latência média;
+- pior latência observada;
+- possível ponto de degradação.
+
+## 5. Medição de throughput TCP
+
+No Docker, o servidor já estará executando `iperf3 -s`.
+
+No cliente:
+
+```bash
+docker exec -it cliente-rede iperf3 -c servidor-iperf
+```
+
+Registre:
+
+- taxa de transferência média;
+- retransmissões, se apresentadas;
+- duração do teste.
+
+Repita três vezes.
+
+```bash
+docker exec -it cliente-rede iperf3 -c servidor-iperf
+```
+
+## 6. Medição de jitter com UDP
+
+Execute:
+
+```bash
+docker exec -it cliente-rede iperf3 -c servidor-iperf -u -b 10M
+```
+
+Registre:
+
+- bitrate;
+- jitter;
+- pacotes perdidos;
+- percentual de perda.
+
+Repita usando outro valor de banda:
+
+```bash
+docker exec -it cliente-rede iperf3 -c servidor-iperf -u -b 50M
+```
+
+Compare os resultados.
+
+## 7. Construção da baseline inicial
+
+Cada dupla deverá preencher uma tabela como a seguir:
+
+| Métrica | Teste 1 | Teste 2 | Teste 3 | Valor de referência | Observação |
+| --- | --- | --- | --- | --- | --- |
+| Latência média |  |  |  |  |  |
+| Perda de pacotes |  |  |  |  |  |
+| Jitter |  |  |  |  |  |
+| Throughput TCP |  |  |  |  |  |
+| Throughput UDP |  |  |  |  |  |
+
+A equipe deverá justificar como definiu o **valor de referência**.
+
+## 8. Simulação controlada de degradação
+
+Se o laboratório permitir, utilize `tc` em um ambiente Linux ou container com privilégios adequados para introduzir atraso e perda **somente no ambiente de laboratório**.
+
+Exemplo:
+
+```bash
+tc qdisc add dev eth0 root netem delay 100ms loss 5%
+```
+
+Execute novamente:
+
+```bash
+ping -c 20 servidor-iperf
+```
+
+E:
+
+```bash
+iperf3 -c servidor-iperf -u -b 10M
+```
+
+Remova a configuração ao final:
+
+```bash
+tc qdisc del dev eth0 root
+```
+
+<aside>
+⚠️
+
+Execute a simulação apenas no ambiente isolado do laboratório. Não aplique `tc`, perda artificial ou limitação de banda em redes de produção, redes corporativas ou equipamentos de terceiros.
+
+</aside>
+
+## 9. Comparação: normal × degradado
+
+Crie uma tabela:
+
+| Métrica | Cenário normal | Cenário degradado | Variação | Classificação |
+| --- | --- | --- | --- | --- |
+| Latência |  |  |  |  |
+| Perda |  |  |  |  |
+| Jitter |  |  |  |  |
+| Throughput |  |  |  |  |
+
+Classifique cada resultado como:
+
+- **Normal**
+- **Atenção**
+- **Crítico**
+
+## 10. KPI e KRI para o Painel de Governança
+
+A dupla deverá transformar os resultados em indicadores.
+
+### Exemplos de KPI
+
+- latência média dos serviços críticos;
+- throughput médio por enlace;
+- disponibilidade do serviço.
+
+### Exemplos de KRI
+
+- percentual de medições acima da baseline;
+- número de ocorrências com perda acima do esperado;
+- quantidade de eventos com jitter elevado.
+
+## 📦 Entregáveis
+
+Cada dupla deverá entregar:
+
+- captura da execução do `ping`;
+- captura ou resultado do `mtr`;
+- resultado de pelo menos 3 testes TCP com `iperf3`;
+- resultado de pelo menos 2 testes UDP;
+- tabela da baseline;
+- comparação normal × degradado;
+- definição de **3 KPIs e 2 KRIs**;
+- conclusão técnica com no mínimo 5 linhas.

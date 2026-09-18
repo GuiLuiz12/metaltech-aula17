@@ -1,0 +1,22 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "metaltech-aula17",
+    "-f",
+    "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+    "exec",
+    "-T",
+    "cliente",
+    "ping",
+    "-n",
+    "-c",
+    "20",
+    "172.30.0.3"
+  ],
+  "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml exec -T cliente ping -n -c 20 172.30.0.3",
+  "start": "2026-09-18T20:43:07.900056-03:00",
+  "end": "2026-09-18T20:43:27.438948-03:00",
+  "exit_code": 0
+}

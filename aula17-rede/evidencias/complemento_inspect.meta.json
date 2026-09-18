@@ -1,0 +1,12 @@
+{
+  "command": [
+    "docker",
+    "inspect",
+    "319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60",
+    "76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c"
+  ],
+  "command_shell": "docker inspect 319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60 76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c",
+  "start": "2026-09-18T20:44:40.611839-03:00",
+  "end": "2026-09-18T20:44:40.628665-03:00",
+  "exit_code": 0
+}

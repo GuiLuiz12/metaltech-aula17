@@ -1,0 +1,11 @@
+indicador,nome,cenario,formula,unidade,meta_faixa_proposta,periodo,valor_observado,responsavel_sugerido
+KPI 1,RTT ICMP P95,normal,nearest-rank P95 de todos os RTT recebidos,ms,≤1 ms no laboratório,Bateria curta do cenário; horários individuais nos metadados,0.08,Infraestrutura
+KPI 2,Entrega ICMP,normal,100 × recebidos / enviados,%,100% no laboratório,Bateria curta do cenário; horários individuais nos metadados,100.0,Infraestrutura
+KPI 3,Retenção de throughput TCP,normal,100 × mediana TCP cenário / mediana TCP normal,%,≥90%,Bateria curta do cenário; horários individuais nos metadados,100.0,Infraestrutura
+KRI 1,Ensaios ICMP com perda,normal,100 × testes ping com perda >0 / 3,%,"Normal 0; Atenção >0 a 33,34; Crítico >33,34",Bateria curta do cenário; horários individuais nos metadados,0.0,Infraestrutura e automação
+KRI 2,Ensaios UDP com perda >1%,normal,100 × testes UDP com perda >1% / 6,%,"Normal 0; Atenção >0 a 33,34; Crítico >33,34",Bateria curta do cenário; horários individuais nos metadados,0.0,Infraestrutura
+KPI 1,RTT ICMP P95,degradado,nearest-rank P95 de todos os RTT recebidos,ms,≤1 ms no laboratório,Bateria curta do cenário; horários individuais nos metadados,100.0,Infraestrutura
+KPI 2,Entrega ICMP,degradado,100 × recebidos / enviados,%,100% no laboratório,Bateria curta do cenário; horários individuais nos metadados,95.0,Infraestrutura
+KPI 3,Retenção de throughput TCP,degradado,100 × mediana TCP cenário / mediana TCP normal,%,≥90%,Bateria curta do cenário; horários individuais nos metadados,0.0010493564369777077,Infraestrutura
+KRI 1,Ensaios ICMP com perda,degradado,100 × testes ping com perda >0 / 3,%,"Normal 0; Atenção >0 a 33,34; Crítico >33,34",Bateria curta do cenário; horários individuais nos metadados,66.66666666666667,Infraestrutura e automação
+KRI 2,Ensaios UDP com perda >1%,degradado,100 × testes UDP com perda >1% / 6,%,"Normal 0; Atenção >0 a 33,34; Crítico >33,34",Bateria curta do cenário; horários individuais nos metadados,100.0,Infraestrutura

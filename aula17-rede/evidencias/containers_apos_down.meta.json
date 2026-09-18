@@ -1,0 +1,13 @@
+{
+  "command": [
+    "docker",
+    "ps",
+    "-aq",
+    "--filter",
+    "label=com.docker.compose.project=metaltech-aula17"
+  ],
+  "command_shell": "docker ps -aq --filter label=com.docker.compose.project=metaltech-aula17",
+  "start": "2026-09-18T20:43:37.755177-03:00",
+  "end": "2026-09-18T20:43:37.768379-03:00",
+  "exit_code": 0
+}

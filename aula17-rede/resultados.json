@@ -1,0 +1,1294 @@
+{
+  "integrantes": [
+    "Guilherme Luiz da Silva",
+    "Risiane Izabel de Souza Santos"
+  ],
+  "percentile_method": "nearest-rank: sorted[ceil(0.95*n)-1], apenas respostas recebidas",
+  "scenarios": {
+    "normal": {
+      "ping": [
+        {
+          "source": "normal_ping_1.stdout",
+          "sent": 20,
+          "received": 20,
+          "lost": 0,
+          "loss_pct": 0.0,
+          "min_ms": 0.033,
+          "avg_ms": 0.052,
+          "max_ms": 0.137,
+          "p95_ms": 0.099,
+          "samples": [
+            {
+              "seq": 1,
+              "rtt_ms": 0.099
+            },
+            {
+              "seq": 2,
+              "rtt_ms": 0.046
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 0.05
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 0.075
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 0.047
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 0.034
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 0.054
+            },
+            {
+              "seq": 8,
+              "rtt_ms": 0.137
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 0.043
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 0.039
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 0.042
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 0.042
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 0.033
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 0.043
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 0.044
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 0.052
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 0.044
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 0.043
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 0.039
+            }
+          ]
+        },
+        {
+          "source": "normal_ping_2.stdout",
+          "sent": 20,
+          "received": 20,
+          "lost": 0,
+          "loss_pct": 0.0,
+          "min_ms": 0.04,
+          "avg_ms": 0.052,
+          "max_ms": 0.08,
+          "p95_ms": 0.065,
+          "samples": [
+            {
+              "seq": 1,
+              "rtt_ms": 0.08
+            },
+            {
+              "seq": 2,
+              "rtt_ms": 0.056
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 0.054
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 0.046
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 0.046
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 0.049
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 0.049
+            },
+            {
+              "seq": 8,
+              "rtt_ms": 0.044
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 0.055
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 0.064
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 0.061
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 0.052
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 0.045
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 0.053
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 0.049
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 0.065
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 0.052
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 0.04
+            }
+          ]
+        },
+        {
+          "source": "normal_ping_3.stdout",
+          "sent": 20,
+          "received": 20,
+          "lost": 0,
+          "loss_pct": 0.0,
+          "min_ms": 0.044,
+          "avg_ms": 0.052,
+          "max_ms": 0.083,
+          "p95_ms": 0.069,
+          "samples": [
+            {
+              "seq": 1,
+              "rtt_ms": 0.052
+            },
+            {
+              "seq": 2,
+              "rtt_ms": 0.056
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 0.044
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 0.083
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 0.053
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 0.044
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 8,
+              "rtt_ms": 0.051
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 0.05
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 0.053
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 0.05
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 0.046
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 0.05
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 0.069
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 0.046
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 0.048
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 0.053
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 0.053
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 0.051
+            }
+          ]
+        }
+      ],
+      "mtr": {
+        "hops": [
+          {
+            "hop": 1,
+            "ip": "172.30.0.3",
+            "loss_pct": 0.0,
+            "sent": 20,
+            "avg_ms": 0.1,
+            "worst_ms": 0.2
+          }
+        ],
+        "hop_count": 1,
+        "source": "normal_mtr.stdout"
+      },
+      "tcp": [
+        {
+          "source": "normal_tcp_1.json",
+          "receiver_mbps": 68856.59748442312,
+          "receiver_seconds": 10.009553,
+          "sender_seconds": 10.000965,
+          "sender_retransmits": 0
+        },
+        {
+          "source": "normal_tcp_2.json",
+          "receiver_mbps": 69394.8586636377,
+          "receiver_seconds": 10.001255,
+          "sender_seconds": 10.001157,
+          "sender_retransmits": 21
+        },
+        {
+          "source": "normal_tcp_3.json",
+          "receiver_mbps": 69243.51772883997,
+          "receiver_seconds": 10.001444,
+          "sender_seconds": 10.001347,
+          "sender_retransmits": 0
+        }
+      ],
+      "udp10": [
+        {
+          "source": "normal_udp10_1.json",
+          "receiver_mbps": 9.999880620831664,
+          "receiver_seconds": 10.001745,
+          "sender_seconds": 10.001601,
+          "requested_mbps": 10,
+          "jitter_ms": 0.021205151638822837,
+          "lost_packets": 0,
+          "total_packets": 8634,
+          "loss_pct": 0
+        },
+        {
+          "source": "normal_udp10_2.json",
+          "receiver_mbps": 9.999854625745781,
+          "receiver_seconds": 10.001771,
+          "sender_seconds": 10.001627,
+          "requested_mbps": 10,
+          "jitter_ms": 0.02614648735453378,
+          "lost_packets": 0,
+          "total_packets": 8634,
+          "loss_pct": 0
+        },
+        {
+          "source": "normal_udp10_3.json",
+          "receiver_mbps": 10.00010158451852,
+          "receiver_seconds": 10.001524,
+          "sender_seconds": 10.001406,
+          "requested_mbps": 10,
+          "jitter_ms": 0.056071185990072034,
+          "lost_packets": 0,
+          "total_packets": 8634,
+          "loss_pct": 0
+        }
+      ],
+      "udp50": [
+        {
+          "source": "normal_udp50_1.json",
+          "receiver_mbps": 49.99891634943541,
+          "receiver_seconds": 10.001379,
+          "sender_seconds": 10.001273,
+          "requested_mbps": 50,
+          "jitter_ms": 0.0012803554464982884,
+          "lost_packets": 0,
+          "total_packets": 43168,
+          "loss_pct": 0
+        },
+        {
+          "source": "normal_udp50_2.json",
+          "receiver_mbps": 49.99894792004232,
+          "receiver_seconds": 10.001141,
+          "sender_seconds": 10.001015,
+          "requested_mbps": 50,
+          "jitter_ms": 0.004014821729328474,
+          "lost_packets": 0,
+          "total_packets": 43167,
+          "loss_pct": 0
+        },
+        {
+          "source": "normal_udp50_3.json",
+          "receiver_mbps": 49.99892449830086,
+          "receiver_seconds": 10.000914,
+          "sender_seconds": 10.00084,
+          "requested_mbps": 50,
+          "jitter_ms": 0.005495025566179618,
+          "lost_packets": 0,
+          "total_packets": 43166,
+          "loss_pct": 0
+        }
+      ],
+      "ping_aggregate": {
+        "sent": 60,
+        "lost": 0,
+        "loss_pct": 0.0,
+        "p95_ms": 0.08
+      }
+    },
+    "degradado": {
+      "ping": [
+        {
+          "source": "degradado_ping_1.stdout",
+          "sent": 20,
+          "received": 20,
+          "lost": 0,
+          "loss_pct": 0.0,
+          "min_ms": 100.051,
+          "avg_ms": 100.216,
+          "max_ms": 100.421,
+          "p95_ms": 100.0,
+          "samples": [
+            {
+              "seq": 1,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 2,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 8,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 100.0
+            }
+          ]
+        },
+        {
+          "source": "degradado_ping_2.stdout",
+          "sent": 20,
+          "received": 18,
+          "lost": 2,
+          "loss_pct": 10.0,
+          "min_ms": 100.06,
+          "avg_ms": 100.258,
+          "max_ms": 100.453,
+          "p95_ms": 100.0,
+          "samples": [
+            {
+              "seq": 2,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 100.0
+            }
+          ]
+        },
+        {
+          "source": "degradado_ping_3.stdout",
+          "sent": 20,
+          "received": 19,
+          "lost": 1,
+          "loss_pct": 5.0,
+          "min_ms": 100.063,
+          "avg_ms": 100.218,
+          "max_ms": 100.445,
+          "p95_ms": 100.0,
+          "samples": [
+            {
+              "seq": 1,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 3,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 4,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 5,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 6,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 7,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 8,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 9,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 10,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 11,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 12,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 13,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 14,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 15,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 16,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 17,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 18,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 19,
+              "rtt_ms": 100.0
+            },
+            {
+              "seq": 20,
+              "rtt_ms": 100.0
+            }
+          ]
+        }
+      ],
+      "mtr": {
+        "hops": [
+          {
+            "hop": 1,
+            "ip": "172.30.0.3",
+            "loss_pct": 5.0,
+            "sent": 20,
+            "avg_ms": 100.3,
+            "worst_ms": 100.4
+          }
+        ],
+        "hop_count": 1,
+        "source": "degradado_mtr.stdout"
+      },
+      "tcp": [
+        {
+          "source": "degradado_tcp_1.json",
+          "receiver_mbps": 0.622807598474128,
+          "receiver_seconds": 10.101765,
+          "sender_seconds": 10.001368,
+          "sender_retransmits": 26
+        },
+        {
+          "source": "degradado_tcp_2.json",
+          "receiver_mbps": 0.7266113104773826,
+          "receiver_seconds": 10.101731,
+          "sender_seconds": 10.001331,
+          "sender_retransmits": 48
+        },
+        {
+          "source": "degradado_tcp_3.json",
+          "receiver_mbps": 1.0380412309593627,
+          "receiver_seconds": 10.101487,
+          "sender_seconds": 10.001304,
+          "sender_retransmits": 50
+        }
+      ],
+      "udp10": [
+        {
+          "source": "degradado_udp10_1.json",
+          "receiver_mbps": 9.39197217837558,
+          "receiver_seconds": 10.101495,
+          "sender_seconds": 10.001252,
+          "requested_mbps": 10,
+          "jitter_ms": 0.06226614550660865,
+          "lost_packets": 444,
+          "total_packets": 8634,
+          "loss_pct": 5.142460041695622
+        },
+        {
+          "source": "degradado_udp10_2.json",
+          "receiver_mbps": 9.423809074572647,
+          "receiver_seconds": 10.101787,
+          "sender_seconds": 10.001548,
+          "requested_mbps": 10,
+          "jitter_ms": 0.086146371760294,
+          "lost_packets": 416,
+          "total_packets": 8634,
+          "loss_pct": 4.81816075978689
+        },
+        {
+          "source": "degradado_udp10_3.json",
+          "receiver_mbps": 9.455139504026821,
+          "receiver_seconds": 10.101393,
+          "sender_seconds": 10.001253,
+          "requested_mbps": 10,
+          "jitter_ms": 0.15082518603841752,
+          "lost_packets": 389,
+          "total_packets": 8634,
+          "loss_pct": 4.505443595089182
+        }
+      ],
+      "udp50": [
+        {
+          "source": "degradado_udp50_1.json",
+          "receiver_mbps": 45.74440340807246,
+          "receiver_seconds": 10.404591,
+          "sender_seconds": 10.000515,
+          "requested_mbps": 50,
+          "jitter_ms": 0.007785813767460428,
+          "lost_packets": 2078,
+          "total_packets": 43165,
+          "loss_pct": 4.814085485926098
+        },
+        {
+          "source": "degradado_udp50_2.json",
+          "receiver_mbps": 47.03186472329436,
+          "receiver_seconds": 10.101547,
+          "sender_seconds": 10.001419,
+          "requested_mbps": 50,
+          "jitter_ms": 0.0011194279655685284,
+          "lost_packets": 2155,
+          "total_packets": 43168,
+          "loss_pct": 4.9921237954040025
+        },
+        {
+          "source": "degradado_udp50_3.json",
+          "receiver_mbps": 47.05960114244407,
+          "receiver_seconds": 10.101501,
+          "sender_seconds": 10.001277,
+          "requested_mbps": 50,
+          "jitter_ms": 0.00539825892366197,
+          "lost_packets": 2131,
+          "total_packets": 43168,
+          "loss_pct": 4.936527057079318
+        }
+      ],
+      "ping_aggregate": {
+        "sent": 60,
+        "lost": 3,
+        "loss_pct": 5.0,
+        "p95_ms": 100.0
+      }
+    }
+  },
+  "recovery_initial": {
+    "source": "recuperacao_ping.stdout",
+    "sent": 20,
+    "received": 20,
+    "lost": 0,
+    "loss_pct": 0.0,
+    "min_ms": 0.036,
+    "avg_ms": 0.043,
+    "max_ms": 0.06,
+    "p95_ms": 0.058,
+    "samples": [
+      {
+        "seq": 1,
+        "rtt_ms": 0.041
+      },
+      {
+        "seq": 2,
+        "rtt_ms": 0.053
+      },
+      {
+        "seq": 3,
+        "rtt_ms": 0.041
+      },
+      {
+        "seq": 4,
+        "rtt_ms": 0.039
+      },
+      {
+        "seq": 5,
+        "rtt_ms": 0.036
+      },
+      {
+        "seq": 6,
+        "rtt_ms": 0.042
+      },
+      {
+        "seq": 7,
+        "rtt_ms": 0.038
+      },
+      {
+        "seq": 8,
+        "rtt_ms": 0.038
+      },
+      {
+        "seq": 9,
+        "rtt_ms": 0.042
+      },
+      {
+        "seq": 10,
+        "rtt_ms": 0.051
+      },
+      {
+        "seq": 11,
+        "rtt_ms": 0.04
+      },
+      {
+        "seq": 12,
+        "rtt_ms": 0.038
+      },
+      {
+        "seq": 13,
+        "rtt_ms": 0.04
+      },
+      {
+        "seq": 14,
+        "rtt_ms": 0.041
+      },
+      {
+        "seq": 15,
+        "rtt_ms": 0.058
+      },
+      {
+        "seq": 16,
+        "rtt_ms": 0.038
+      },
+      {
+        "seq": 17,
+        "rtt_ms": 0.039
+      },
+      {
+        "seq": 18,
+        "rtt_ms": 0.044
+      },
+      {
+        "seq": 19,
+        "rtt_ms": 0.044
+      },
+      {
+        "seq": 20,
+        "rtt_ms": 0.06
+      }
+    ]
+  },
+  "recovery": {
+    "source": "complemento_recuperacao_ping.stdout",
+    "sent": 20,
+    "received": 20,
+    "lost": 0,
+    "loss_pct": 0.0,
+    "min_ms": 0.037,
+    "avg_ms": 0.05,
+    "max_ms": 0.065,
+    "p95_ms": 0.065,
+    "samples": [
+      {
+        "seq": 1,
+        "rtt_ms": 0.048
+      },
+      {
+        "seq": 2,
+        "rtt_ms": 0.048
+      },
+      {
+        "seq": 3,
+        "rtt_ms": 0.05
+      },
+      {
+        "seq": 4,
+        "rtt_ms": 0.047
+      },
+      {
+        "seq": 5,
+        "rtt_ms": 0.058
+      },
+      {
+        "seq": 6,
+        "rtt_ms": 0.055
+      },
+      {
+        "seq": 7,
+        "rtt_ms": 0.051
+      },
+      {
+        "seq": 8,
+        "rtt_ms": 0.064
+      },
+      {
+        "seq": 9,
+        "rtt_ms": 0.048
+      },
+      {
+        "seq": 10,
+        "rtt_ms": 0.047
+      },
+      {
+        "seq": 11,
+        "rtt_ms": 0.065
+      },
+      {
+        "seq": 12,
+        "rtt_ms": 0.051
+      },
+      {
+        "seq": 13,
+        "rtt_ms": 0.065
+      },
+      {
+        "seq": 14,
+        "rtt_ms": 0.037
+      },
+      {
+        "seq": 15,
+        "rtt_ms": 0.039
+      },
+      {
+        "seq": 16,
+        "rtt_ms": 0.054
+      },
+      {
+        "seq": 17,
+        "rtt_ms": 0.045
+      },
+      {
+        "seq": 18,
+        "rtt_ms": 0.04
+      },
+      {
+        "seq": 19,
+        "rtt_ms": 0.044
+      },
+      {
+        "seq": 20,
+        "rtt_ms": 0.05
+      }
+    ]
+  },
+  "execution_initial": {
+    "end": "2026-09-18T20:43:37.781193-03:00",
+    "errors": [
+      "degradado_udp10_3: "
+    ],
+    "cleanup": {
+      "netem_removido": true,
+      "down_sucesso": true,
+      "containers_restantes": [],
+      "redes_restantes": []
+    }
+  },
+  "execution": {
+    "end": "2026-09-18T20:45:56.285427-03:00",
+    "errors": [],
+    "cleanup": {
+      "netem_removido": true,
+      "down_sucesso": true,
+      "containers_restantes": [],
+      "redes_restantes": []
+    }
+  },
+  "failed_attempts": [
+    {
+      "metadata": "falhas/degradado_udp10_3.meta.json",
+      "command": [
+        "docker",
+        "compose",
+        "-p",
+        "metaltech-aula17",
+        "-f",
+        "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+        "exec",
+        "-T",
+        "cliente",
+        "iperf3",
+        "-c",
+        "172.30.0.3",
+        "-t",
+        "10",
+        "-J",
+        "--get-server-output",
+        "-u",
+        "-b",
+        "10M"
+      ],
+      "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml exec -T cliente iperf3 -c 172.30.0.3 -t 10 -J --get-server-output -u -b 10M",
+      "start": "2026-09-18T20:42:36.895588-03:00",
+      "end": "2026-09-18T20:43:07.763166-03:00",
+      "exit_code": 1
+    }
+  ],
+  "baseline": [
+    {
+      "metrica": "Latência média",
+      "unidade": "ms",
+      "teste_1": 0.052,
+      "teste_2": 0.052,
+      "teste_3": 0.052,
+      "referencia": 0.052,
+      "observacao": "Mediana de 3 execuções normais."
+    },
+    {
+      "metrica": "Perda ICMP",
+      "unidade": "%",
+      "teste_1": 0.0,
+      "teste_2": 0.0,
+      "teste_3": 0.0,
+      "referencia": 0.0,
+      "observacao": "Referência agregada 0/60; mediana individual 0.0%."
+    },
+    {
+      "metrica": "Jitter UDP 10 Mbps",
+      "unidade": "ms",
+      "teste_1": 0.021205151638822837,
+      "teste_2": 0.02614648735453378,
+      "teste_3": 0.056071185990072034,
+      "referencia": 0.02614648735453378,
+      "observacao": "Mediana de 3 execuções normais."
+    },
+    {
+      "metrica": "Jitter UDP 50 Mbps",
+      "unidade": "ms",
+      "teste_1": 0.0012803554464982884,
+      "teste_2": 0.004014821729328474,
+      "teste_3": 0.005495025566179618,
+      "referencia": 0.004014821729328474,
+      "observacao": "Mediana de 3 execuções normais."
+    },
+    {
+      "metrica": "Throughput TCP",
+      "unidade": "Mbps",
+      "teste_1": 68856.59748442312,
+      "teste_2": 69394.8586636377,
+      "teste_3": 69243.51772883997,
+      "referencia": 69243.51772883997,
+      "observacao": "Mediana de 3 execuções normais."
+    },
+    {
+      "metrica": "Throughput UDP 10 Mbps",
+      "unidade": "Mbps",
+      "teste_1": 9.999880620831664,
+      "teste_2": 9.999854625745781,
+      "teste_3": 10.00010158451852,
+      "referencia": 9.999880620831664,
+      "observacao": "Mediana de 3 execuções normais."
+    },
+    {
+      "metrica": "Throughput UDP 50 Mbps",
+      "unidade": "Mbps",
+      "teste_1": 49.99891634943541,
+      "teste_2": 49.99894792004232,
+      "teste_3": 49.99892449830086,
+      "referencia": 49.99892449830086,
+      "observacao": "Mediana de 3 execuções normais."
+    }
+  ],
+  "comparison": [
+    {
+      "metrica": "Latência média",
+      "unidade": "ms",
+      "normal": 0.052,
+      "degradado": 100.218,
+      "variacao_absoluta": 100.166,
+      "unidade_variacao": "ms",
+      "variacao_percentual": 192626.9230769231,
+      "classificacao": "Crítico",
+      "criterio": "Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+    },
+    {
+      "metrica": "Perda ICMP",
+      "unidade": "%",
+      "normal": 0.0,
+      "degradado": 5.0,
+      "variacao_absoluta": 5.0,
+      "unidade_variacao": "p.p.",
+      "variacao_percentual": "",
+      "classificacao": "Crítico",
+      "criterio": "Normal ≤0,1%; Atenção >0,1 a 1%; Crítico >1%"
+    },
+    {
+      "metrica": "Jitter UDP 10 Mbps",
+      "unidade": "ms",
+      "normal": 0.02614648735453378,
+      "degradado": 0.086146371760294,
+      "variacao_absoluta": 0.059999884405760213,
+      "unidade_variacao": "ms",
+      "variacao_percentual": 229.47588940797542,
+      "classificacao": "Normal",
+      "criterio": "Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+    },
+    {
+      "metrica": "Jitter UDP 50 Mbps",
+      "unidade": "ms",
+      "normal": 0.004014821729328474,
+      "degradado": 0.00539825892366197,
+      "variacao_absoluta": 0.0013834371943334959,
+      "unidade_variacao": "ms",
+      "variacao_percentual": 34.458247155220306,
+      "classificacao": "Normal",
+      "criterio": "Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+    },
+    {
+      "metrica": "Throughput TCP",
+      "unidade": "Mbps",
+      "normal": 69243.51772883997,
+      "degradado": 0.7266113104773826,
+      "variacao_absoluta": -69242.7911175295,
+      "unidade_variacao": "Mbps",
+      "variacao_percentual": -99.99895064356302,
+      "classificacao": "Crítico",
+      "criterio": "Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%"
+    },
+    {
+      "metrica": "Throughput UDP 10 Mbps",
+      "unidade": "Mbps",
+      "normal": 9.999880620831664,
+      "degradado": 9.423809074572647,
+      "variacao_absoluta": -0.5760715462590174,
+      "unidade_variacao": "Mbps",
+      "variacao_percentual": -5.76078423435326,
+      "classificacao": "Normal",
+      "criterio": "Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%"
+    },
+    {
+      "metrica": "Throughput UDP 50 Mbps",
+      "unidade": "Mbps",
+      "normal": 49.99892449830086,
+      "degradado": 47.03186472329436,
+      "variacao_absoluta": -2.967059775006497,
+      "unidade_variacao": "Mbps",
+      "variacao_percentual": -5.934247195871841,
+      "classificacao": "Normal",
+      "criterio": "Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%"
+    }
+  ],
+  "indicators": [
+    {
+      "indicador": "KPI 1",
+      "nome": "RTT ICMP P95",
+      "cenario": "normal",
+      "formula": "nearest-rank P95 de todos os RTT recebidos",
+      "unidade": "ms",
+      "meta_faixa_proposta": "≤1 ms no laboratório",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 0.08,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KPI 2",
+      "nome": "Entrega ICMP",
+      "cenario": "normal",
+      "formula": "100 × recebidos / enviados",
+      "unidade": "%",
+      "meta_faixa_proposta": "100% no laboratório",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 100.0,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KPI 3",
+      "nome": "Retenção de throughput TCP",
+      "cenario": "normal",
+      "formula": "100 × mediana TCP cenário / mediana TCP normal",
+      "unidade": "%",
+      "meta_faixa_proposta": "≥90%",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 100.0,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KRI 1",
+      "nome": "Ensaios ICMP com perda",
+      "cenario": "normal",
+      "formula": "100 × testes ping com perda >0 / 3",
+      "unidade": "%",
+      "meta_faixa_proposta": "Normal 0; Atenção >0 a 33,34; Crítico >33,34",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 0.0,
+      "responsavel_sugerido": "Infraestrutura e automação"
+    },
+    {
+      "indicador": "KRI 2",
+      "nome": "Ensaios UDP com perda >1%",
+      "cenario": "normal",
+      "formula": "100 × testes UDP com perda >1% / 6",
+      "unidade": "%",
+      "meta_faixa_proposta": "Normal 0; Atenção >0 a 33,34; Crítico >33,34",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 0.0,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KPI 1",
+      "nome": "RTT ICMP P95",
+      "cenario": "degradado",
+      "formula": "nearest-rank P95 de todos os RTT recebidos",
+      "unidade": "ms",
+      "meta_faixa_proposta": "≤1 ms no laboratório",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 100.0,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KPI 2",
+      "nome": "Entrega ICMP",
+      "cenario": "degradado",
+      "formula": "100 × recebidos / enviados",
+      "unidade": "%",
+      "meta_faixa_proposta": "100% no laboratório",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 95.0,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KPI 3",
+      "nome": "Retenção de throughput TCP",
+      "cenario": "degradado",
+      "formula": "100 × mediana TCP cenário / mediana TCP normal",
+      "unidade": "%",
+      "meta_faixa_proposta": "≥90%",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 0.0010493564369777077,
+      "responsavel_sugerido": "Infraestrutura"
+    },
+    {
+      "indicador": "KRI 1",
+      "nome": "Ensaios ICMP com perda",
+      "cenario": "degradado",
+      "formula": "100 × testes ping com perda >0 / 3",
+      "unidade": "%",
+      "meta_faixa_proposta": "Normal 0; Atenção >0 a 33,34; Crítico >33,34",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 66.66666666666667,
+      "responsavel_sugerido": "Infraestrutura e automação"
+    },
+    {
+      "indicador": "KRI 2",
+      "nome": "Ensaios UDP com perda >1%",
+      "cenario": "degradado",
+      "formula": "100 × testes UDP com perda >1% / 6",
+      "unidade": "%",
+      "meta_faixa_proposta": "Normal 0; Atenção >0 a 33,34; Crítico >33,34",
+      "periodo": "Bateria curta do cenário; horários individuais nos metadados",
+      "valor_observado": 100.0,
+      "responsavel_sugerido": "Infraestrutura"
+    }
+  ],
+  "validation": {
+    "ping_tests": 6,
+    "ping_packets_sent": 120,
+    "mtr_tests": 2,
+    "mtr_cycles_each": 20,
+    "tcp_tests": 6,
+    "udp10_tests": 6,
+    "udp50_tests": 6,
+    "recovery_tests": 2,
+    "failed_iperf_attempts": 1
+  }
+}

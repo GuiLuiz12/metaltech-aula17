@@ -1,0 +1,175 @@
+Integrantes: Guilherme Luiz da Silva
+Risiane Izabel de Souza Santos
+Proposta de baseline de desempenho da MetalTech
+Objetivo e serviços selecionados
+Propomos uma baseline para o MetalERP e a rede industrial das máquinas CNC. A proposta permite comparar o desempenho cotidiano com referências por turno, identificar desvios e orientar a resposta da infraestrutura antes que falhas afetem a produção.
+O MetalERP foi selecionado por sustentar o planejamento da produção, o estoque e as ordens de fabricação, com cerca de 200 usuários. A rede CNC foi selecionada porque falhas de comunicação entre máquinas, sensores e supervisão podem interromper as linhas de fabricação.
+Os valores apresentados são referências iniciais propostas para validação após a coleta. Não representam medições já realizadas. Nas CNC, os requisitos do protocolo e os limites dos fabricantes prevalecem sobre os valores sugeridos.
+Método de coleta e interpretação
+A coleta deve durar 30 dias consecutivos e abranger todos os turnos, picos de acesso, backups, manutenção e períodos sem produção. Os resultados devem ser separados por turno e estado operacional. Incidentes devem ser identificados para não serem incorporados como comportamento normal.
+O P95 é o valor abaixo do qual estão 95% das amostras. No ERP, a latência corresponde ao tempo de ida e volta de rede (RTT). Nas CNC, a medição passiva de requisição e resposta inclui o processamento do equipamento. O jitter corresponde à variação absoluta entre tempos consecutivos de trocas equivalentes.
+O throughput deve ser calculado por direção a partir dos contadores de bytes. A utilização é o throughput em Mbps dividido pela capacidade da interface em Mbps, multiplicado por 100. Os links de internet de 1 Gbps e 500 Mbps não definem a capacidade da rede interna.
+A disponibilidade considera o calendário previsto para cada serviço. Manutenções só podem ser excluídas se estiverem fora desse calendário, definido previamente. Dados ausentes devem aparecer como “sem dados”, acompanhados da cobertura de coleta, sem serem classificados como operação normal.
+Organização das tabelas
+Cada ativo possui cinco métricas. Para facilitar a leitura, os registros estão divididos em duas tabelas complementares: coleta e referência; atenção e resposta. A coluna de métrica relaciona as duas partes.
+Baseline do MetalERP
+Monitorar a partir das redes dos usuários até o servidor interno. A disponibilidade deve testar uma consulta funcional de leitura, pois uma resposta a ping não comprova o funcionamento do ERP.
+Coleta e valores de referência
+Métrica
+Ferramenta e coleta
+Comportamento esperado
+Referência inicial
+Latência
+Zabbix + fping; 30 dias; sondagens a cada 10 s; P95 por 5 min.
+Resposta estável, inclusive nos picos.
+P95 ≤ 20 ms.
+Perda de pacotes
+Zabbix + fping; 30 dias; sondagens a cada 10 s, agregadas por 5 min.
+Ausência de perdas recorrentes.
+≤ 0,1% por janela.
+Jitter
+fping + cálculo no Zabbix; 30 dias; variação de RTT e P95 por 5 min.
+Pequena variação entre respostas.
+P95 ≤ 5 ms.
+Volume e throughput
+Zabbix via SNMP ou agente; 30 dias; contadores a cada 60 s.
+Tráfego acompanha a demanda com capacidade disponível.
+P95 da utilização ≤ 60% por direção.
+Disponibilidade
+Zabbix + consulta sintética; 30 dias; teste a cada 60 s.
+Login e consulta de leitura funcionam.
+≥ 99,9% no mês; consulta em até 5 s.
+Condições de atenção e resposta
+Métrica
+Condição de atenção
+Possível causa
+Ação recomendada
+Latência
+P95 > 30 ms em duas janelas consecutivas de 5 min.
+Congestionamento ou sobrecarga do host virtual.
+Verificar filas, descartes e CPU do host.
+Perda de pacotes
+Perda > 1% em 5 min.
+Falha física, congestionamento ou limitação de ICMP.
+Correlacionar erros de interface e aplicação; verificar cabos e portas.
+Jitter
+P95 > 10 ms em duas janelas consecutivas de 5 min.
+Rajadas de tráfego ou disputa de recursos.
+Correlacionar com backups e recursos da VM.
+Volume e throughput
+Utilização > 80% por 5 min.
+Backup concorrente ou transferências em massa.
+Identificar fluxos, ajustar horários e avaliar capacidade.
+Disponibilidade
+Duas falhas consecutivas ou resultado mensal < 99,9%.
+Falha do ERP, SQL, storage ou rede.
+Acionar suporte; verificar dependências e executar recuperação prevista.
+Baseline da rede industrial CNC
+Monitorar por máquina e caminho de comunicação. Priorizar captura passiva via TAP ou espelhamento de porta e diagnósticos dos controladores. Sondagens ativas devem ser compatíveis com os equipamentos e validadas pela automação.
+Coleta e valores de referência
+Métrica
+Ferramenta e coleta
+Comportamento esperado
+Referência inicial
+Latência
+Analisador de protocolo via TAP/SPAN; 30 dias; captura contínua; P95 por 1 min.
+Trocas rápidas e estáveis em produção.
+P95 ≤ 5 ms por máquina.
+Perda de pacotes ou mensagens
+Analisador e diagnósticos dos controladores; 30 dias; contínua; resumo por 1 min.
+Nenhuma perda recorrente.
+0% de perdas detectadas.
+Jitter
+Captura passiva e cálculo da variação entre trocas; 30 dias; P95 por 1 min.
+Baixa variação entre trocas equivalentes.
+P95 ≤ 1 ms.
+Volume e throughput
+Zabbix via SNMP nos switches; 30 dias; contadores a cada 60 s.
+Tráfego previsível por ciclo e turno.
+P95 da utilização ≤ 40% por porta e direção.
+Disponibilidade
+Eventos e heartbeats dos controladores integrados ao Zabbix; 30 dias; contínua.
+Comunicação mantida durante a operação prevista.
+≥ 99,95% por máquina no mês.
+Condições de atenção e resposta
+Métrica
+Condição de atenção
+Possível causa
+Ação recomendada
+Latência
+P95 > 10 ms por 3 min ou violação do limite do fabricante.
+Congestionamento ou controlador sobrecarregado.
+Localizar segmento e verificar filas, portas e controlador.
+Perda de pacotes ou mensagens
+Perda > 0,1% em 5 min ou timeout de comunicação.
+Interferência, cabo danificado ou descartes.
+Verificar erros físicos e sequência de mensagens com manutenção.
+Jitter
+P95 > 2 ms por 3 min ou violação do limite do fabricante.
+Rajadas, filas ou prioridade inadequada.
+Revisar tráfego concorrente, segmentação e prioridades.
+Volume e throughput
+Utilização > 60% por 5 min.
+Broadcast excessivo, loop ou nova carga.
+Identificar origem e revisar VLANs e proteção contra loops.
+Disponibilidade
+Qualquer timeout operacional ou resultado mensal < 99,95%.
+Falha de energia, switch, controlador ou enlace.
+Acionar automação e seguir a recuperação prevista para a linha.
+A perda exige contadores ou números de sequência do protocolo. Diferenciar falhas da captura de perdas reais. O timeout operacional deve seguir a configuração validada do equipamento.
+KPIs do Painel de Governança
+Os três indicadores de desempenho avaliam a entrega dos serviços. As metas são propostas iniciais e devem ser confirmadas após os 30 dias de coleta, considerando as necessidades da produção.
+KPI
+Cálculo e apresentação
+Meta e acompanhamento
+1  Disponibilidade funcional do MetalERP
+Minutos disponíveis ÷ minutos previstos de serviço × 100. Considerar o sucesso da consulta funcional e o tempo máximo de 5 s.
+Meta: ≥ 99,9%.
+Acompanhamento diário e fechamento mensal.
+Responsável proposto: TI e responsável pelo ERP.
+2  Disponibilidade da comunicação CNC
+Por máquina: minutos com comunicação disponível ÷ minutos programados de operação × 100. Exibir o menor resultado e a quantidade de máquinas abaixo da meta.
+Meta: ≥ 99,95% para todas as máquinas.
+Acompanhamento por turno e fechamento mensal.
+Responsável proposto: automação industrial.
+3  Conformidade de desempenho
+Janelas válidas de 5 min que atendem simultaneamente às referências de latência, perda, jitter e utilização ÷ total de janelas válidas × 100. Calcular separadamente para ERP e cada CNC.
+Meta: ≥ 95% por serviço ou máquina.
+Apuração diária e consolidação mensal.
+Responsáveis propostos: infraestrutura e automação.
+Regras de cálculo e qualidade dos dados
+Para o KPI 3, recalcular o P95 de latência e jitter nas janelas de 5 minutos a partir das amostras originais. Usar a perda agregada da janela e o P95 das leituras de utilização. Comparar com as referências de cada ativo, sem calcular uma média dos percentis de 1 minuto.
+No ERP, a disponibilidade é estimada pelas verificações de 60 segundos. Nas CNC, utilizar os registros de início e fim das falhas. Eventos operacionais devem ser investigados imediatamente, mesmo quando a disponibilidade acumulada ainda atende à meta.
+Registrar a cobertura como tempo com observação válida dividido pelo tempo previsto de monitoramento, multiplicado por 100. Se houver intervalos sem dados, exibir a disponibilidade como parcial, informar o tempo desconhecido e não confirmar o cumprimento da meta sem evidência suficiente.
+Uso na gestão
+A TI e a automação devem revisar os indicadores semanalmente e apresentar o fechamento mensal à gestão. Resultados abaixo das metas devem ser associados a incidentes, capacidade e mudanças recentes, com responsável e prazo para correção.
+KRIs do Painel de Governança
+Os dois indicadores de risco medem a exposição a condições que podem provocar degradação ou interrupção. Devem ser acompanhados diariamente e consolidados mensalmente, sem atrasar os alertas operacionais das tabelas de baseline.
+KRI
+Cálculo e faixas
+Risco e ação
+1  Exposição da rede CNC à instabilidade
+Por máquina: janelas válidas de 5 min com latência P95 > 10 ms, jitter P95 > 2 ms ou perda > 0,1% ÷ total de janelas válidas × 100. Exibir o pior resultado.
+Verde: 0%.
+Atenção: > 0% até 1%.
+Crítico: > 1% ou qualquer timeout operacional.
+Risco: perda de comunicação e parada de fabricação.
+Ação: investigar máquina e segmento afetados.
+Responsável proposto: automação industrial.
+2  Exposição ao congestionamento
+Por interface: minutos com utilização acima do limite de atenção ÷ minutos monitorados válidos × 100. Limites: ERP > 80%; CNC > 60%. Exibir o pior resultado.
+Verde: < 1%.
+Atenção: 1% a 5%.
+Crítico: > 5%.
+Risco: latência, descartes e indisponibilidade por falta de capacidade.
+Ação: identificar fluxos, corrigir tráfego anormal e avaliar ampliação.
+Responsável proposto: infraestrutura.
+Validação e revisão da baseline
+Ao final dos 30 dias, comparar as referências propostas com os valores observados por turno e modo de operação. Ajustar as faixas com TI e automação, preservando os limites dos fabricantes. Um desvio deve gerar investigação e não comprova, isoladamente, um incidente.
+Revisar a baseline após mudanças de capacidade, expansão da fábrica, novas máquinas ou alterações relevantes nos sistemas. Manter histórico das versões e das justificativas para cada ajuste.
+Referências técnicas
+Zabbix. Simple checks, versão 7.0. Documentação das verificações ICMP de resposta e perda de pacotes.
+https://www.zabbix.com/documentation/7.0/en/manual/config/items/itemtypes/simple_checks
+NIST. SP 800-82 Rev. 3. Guide to Operational Technology Security, 2023. Referência para as particularidades do monitoramento em ambientes industriais.
+https://csrc.nist.gov/pubs/sp/800/82/r3/final
+Os limites numéricos e as metas deste documento são propostas para o cenário MetalTech; não são valores prescritos pelas referências técnicas.

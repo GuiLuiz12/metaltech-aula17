@@ -1,0 +1,30 @@
+Resumo derivado do MESMO teste; fonte: degradado_tcp_1.json
+{
+  "source": "degradado_tcp_1.json",
+  "receiver_mbps": 0.622807598474128,
+  "receiver_seconds": 10.101765,
+  "sender_seconds": 10.001368,
+  "sender_retransmits": 26
+}
+
+Saída do servidor incluída no JSON:
+-----------------------------------------------------------
+Server listening on 5201 (test #10)
+-----------------------------------------------------------
+Accepted connection from 172.30.0.2, port 41456
+[  5] local 172.30.0.3 port 5201 connected to 172.30.0.2 port 41464
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   1.00-2.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   2.00-3.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   3.00-4.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   4.00-5.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   5.00-6.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   6.00-7.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  5]   8.00-9.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  5]   9.00-10.00  sec  0.00 Bytes  0.00 bits/sec                  
+[  5]  10.00-10.10  sec   128 KBytes  10.4 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.10  sec   768 KBytes   623 Kbits/sec                  receiver

@@ -1,0 +1,22 @@
+name: metaltech-aula17
+services:
+  cliente:
+    cap_add:
+      - NET_ADMIN
+    command:
+      - sleep
+      - infinity
+    image: nicolaka/netshoot:latest
+    networks:
+      lab: null
+  servidor:
+    command:
+      - -s
+    image: networkstatic/iperf3:latest
+    networks:
+      lab: null
+networks:
+  lab:
+    name: metaltech-aula17_lab
+    driver: bridge
+    internal: true

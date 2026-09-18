@@ -1,0 +1,24 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "metaltech-aula17",
+    "-f",
+    "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+    "exec",
+    "-T",
+    "cliente",
+    "iperf3",
+    "-c",
+    "172.30.0.3",
+    "-t",
+    "10",
+    "-J",
+    "--get-server-output"
+  ],
+  "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml exec -T cliente iperf3 -c 172.30.0.3 -t 10 -J --get-server-output",
+  "start": "2026-09-18T20:42:04.465394-03:00",
+  "end": "2026-09-18T20:42:15.344799-03:00",
+  "exit_code": 0
+}

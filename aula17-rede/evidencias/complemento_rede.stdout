@@ -1,0 +1,61 @@
+[
+    {
+        "Name": "metaltech-aula17_lab",
+        "Id": "0a7662bcc1e77f84e75319f508ce95ccab90b87af9726dd6441a6ad9af051d88",
+        "Created": "2026-09-18T20:44:40.349637123-03:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.30.0.0/16",
+                    "Gateway": "172.30.0.1"
+                }
+            ]
+        },
+        "Internal": true,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.config-hash": "0ef3dbeed834fe487716b2040b3dde9d66bbc03c5fc131705a2fb417df19b729",
+            "com.docker.compose.network": "lab",
+            "com.docker.compose.project": "metaltech-aula17",
+            "com.docker.compose.version": "5.5.1"
+        },
+        "Containers": {
+            "319ff49754c0f9e418996f9dbb9823c51f1b260189caae443f2457f40ef8dd60": {
+                "Name": "metaltech-aula17-cliente-1",
+                "EndpointID": "9cb0044619750c9c59e3e6f45fdb6a9cc4a819254621ebebef92277d7a6ecc55",
+                "MacAddress": "c6:c8:58:03:01:ed",
+                "IPv4Address": "172.30.0.3/16",
+                "IPv6Address": ""
+            },
+            "76c9e490c7d4b71cb2ea22d816a030fa18ecb41a864e7e96493bbda1b6a3f09c": {
+                "Name": "metaltech-aula17-servidor-1",
+                "EndpointID": "450e2de013c759ec2583d8de1af21c7e3b2fe68c4d6ff7163825edbc9523fc52",
+                "MacAddress": "46:d9:52:5b:80:02",
+                "IPv4Address": "172.30.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.30.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    }
+]

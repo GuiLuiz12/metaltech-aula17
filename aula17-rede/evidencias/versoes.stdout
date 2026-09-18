@@ -1,0 +1,8 @@
+ping from iputils 20250605
+libcap: yes, IDN: no, NLS: no, error.h: no, getrandom(): yes, __fpending(): yes
+mtr 0.96
+iperf 3.21 (cJSON 1.7.15)
+Linux 3c8871bc1f64 7.0.0-31-generic #31~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Aug 10 09:38:02 UTC 2 x86_64
+Optional features available: CPU affinity setting, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, authentication, bind to device, support IPv4 don't fragment, POSIX threads
+tc utility, iproute2-7.1.0
+[{"ifindex":2,"link_index":20,"ifname":"eth0","flags":["BROADCAST","MULTICAST","UP","LOWER_UP"],"mtu":1500,"qdisc":"noqueue","operstate":"UP","group":"default","link_type":"ether","address":"ba:83:de:fb:4c:92","broadcast":"ff:ff:ff:ff:ff:ff","link_netnsid":0,"addr_info":[{"family":"inet","local":"172.30.0.2","prefixlen":16,"broadcast":"172.30.255.255","scope":"global","label":"eth0","valid_life_time":4294967295,"preferred_life_time":4294967295}]}]

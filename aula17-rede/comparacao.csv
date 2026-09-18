@@ -1,0 +1,8 @@
+metrica,unidade,normal,degradado,variacao_absoluta,unidade_variacao,variacao_percentual,classificacao,criterio
+Latência média,ms,0.052,100.218,100.166,ms,192626.9230769231,Crítico,"Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+Perda ICMP,%,0.0,5.0,5.0,p.p.,,Crítico,"Normal ≤0,1%; Atenção >0,1 a 1%; Crítico >1%"
+Jitter UDP 10 Mbps,ms,0.02614648735453378,0.086146371760294,0.059999884405760213,ms,229.47588940797542,Normal,"Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+Jitter UDP 50 Mbps,ms,0.004014821729328474,0.00539825892366197,0.0013834371943334959,ms,34.458247155220306,Normal,"Normal ≤max(1 ms,1,2×ref); Atenção até max(5 ms,2×ref); Crítico acima"
+Throughput TCP,Mbps,69243.51772883997,0.7266113104773826,-69242.7911175295,Mbps,-99.99895064356302,Crítico,Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%
+Throughput UDP 10 Mbps,Mbps,9.999880620831664,9.423809074572647,-0.5760715462590174,Mbps,-5.76078423435326,Normal,Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%
+Throughput UDP 50 Mbps,Mbps,49.99892449830086,47.03186472329436,-2.967059775006497,Mbps,-5.934247195871841,Normal,Normal ≥90% da ref; Atenção ≥70% e <90%; Crítico <70%

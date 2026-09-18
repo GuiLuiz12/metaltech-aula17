@@ -1,0 +1,3 @@
+Tentativa real falha; nenhum resultado de medição disponível.
+Erro: unable to read from stream socket: Resource temporarily unavailable
+Fonte: degradado_udp10_3.stdout

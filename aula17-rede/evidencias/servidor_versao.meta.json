@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "metaltech-aula17",
+    "-f",
+    "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+    "exec",
+    "-T",
+    "servidor",
+    "iperf3",
+    "--version"
+  ],
+  "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml exec -T servidor iperf3 --version",
+  "start": "2026-09-18T20:37:22.904634-03:00",
+  "end": "2026-09-18T20:37:22.971608-03:00",
+  "exit_code": 0
+}

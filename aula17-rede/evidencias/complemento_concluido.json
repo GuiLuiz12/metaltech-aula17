@@ -1,0 +1,10 @@
+{
+  "end": "2026-09-18T20:45:56.285427-03:00",
+  "errors": [],
+  "cleanup": {
+    "netem_removido": true,
+    "down_sucesso": true,
+    "containers_restantes": [],
+    "redes_restantes": []
+  }
+}

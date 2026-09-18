@@ -1,0 +1,12 @@
+{
+  "end": "2026-09-18T20:43:37.781193-03:00",
+  "errors": [
+    "degradado_udp10_3: "
+  ],
+  "cleanup": {
+    "netem_removido": true,
+    "down_sucesso": true,
+    "containers_restantes": [],
+    "redes_restantes": []
+  }
+}

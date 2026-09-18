@@ -1,0 +1,11 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "version"
+  ],
+  "command_shell": "docker compose version",
+  "start": "2026-09-18T20:37:08.437180-03:00",
+  "end": "2026-09-18T20:37:08.480471-03:00",
+  "exit_code": 0
+}

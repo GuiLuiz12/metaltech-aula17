@@ -1,0 +1,23 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "metaltech-aula17",
+    "-f",
+    "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+    "exec",
+    "-T",
+    "cliente",
+    "tc",
+    "-s",
+    "qdisc",
+    "show",
+    "dev",
+    "eth0"
+  ],
+  "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml exec -T cliente tc -s qdisc show dev eth0",
+  "start": "2026-09-18T20:40:17.713678-03:00",
+  "end": "2026-09-18T20:40:17.778363-03:00",
+  "exit_code": 0
+}

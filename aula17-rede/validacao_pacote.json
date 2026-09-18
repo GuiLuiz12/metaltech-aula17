@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-18T20:46:28.930401-03:00",
+  "files_hashed": 263,
+  "quantities": {
+    "ping_tests": 6,
+    "ping_packets_sent": 120,
+    "mtr_tests": 2,
+    "mtr_cycles_each": 20,
+    "tcp_tests": 6,
+    "udp10_tests": 6,
+    "udp50_tests": 6,
+    "recovery_tests": 2,
+    "failed_iperf_attempts": 1
+  },
+  "all_accepted_tests_exit_codes_zero": true,
+  "failed_attempts_preserved": 1,
+  "cleanup": {
+    "netem_removido": true,
+    "down_sucesso": true,
+    "containers_restantes": [],
+    "redes_restantes": []
+  },
+  "zip_crc_ok": true,
+  "zip_sha256_entries_verified": true,
+  "manifest_excludes": [
+    "SHA256SUMS",
+    "validacao_pacote.json"
+  ],
+  "note": "Valida\u00e7\u00e3o dos hashes e CRC repetida ap\u00f3s incluir este registro no ZIP."
+}

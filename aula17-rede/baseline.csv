@@ -1,0 +1,8 @@
+metrica,unidade,teste_1,teste_2,teste_3,referencia,observacao
+Latência média,ms,0.052,0.052,0.052,0.052,Mediana de 3 execuções normais.
+Perda ICMP,%,0.0,0.0,0.0,0.0,Referência agregada 0/60; mediana individual 0.0%.
+Jitter UDP 10 Mbps,ms,0.021205151638822837,0.02614648735453378,0.056071185990072034,0.02614648735453378,Mediana de 3 execuções normais.
+Jitter UDP 50 Mbps,ms,0.0012803554464982884,0.004014821729328474,0.005495025566179618,0.004014821729328474,Mediana de 3 execuções normais.
+Throughput TCP,Mbps,68856.59748442312,69394.8586636377,69243.51772883997,69243.51772883997,Mediana de 3 execuções normais.
+Throughput UDP 10 Mbps,Mbps,9.999880620831664,9.999854625745781,10.00010158451852,9.999880620831664,Mediana de 3 execuções normais.
+Throughput UDP 50 Mbps,Mbps,49.99891634943541,49.99894792004232,49.99892449830086,49.99892449830086,Mediana de 3 execuções normais.

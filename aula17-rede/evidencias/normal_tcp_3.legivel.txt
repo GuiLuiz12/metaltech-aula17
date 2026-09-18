@@ -1,0 +1,30 @@
+Resumo derivado do MESMO teste; fonte: normal_tcp_3.json
+{
+  "source": "normal_tcp_3.json",
+  "receiver_mbps": 69243.51772883997,
+  "receiver_seconds": 10.001444,
+  "sender_seconds": 10.001347,
+  "sender_retransmits": 0
+}
+
+Saída do servidor incluída no JSON:
+-----------------------------------------------------------
+Server listening on 5201 (test #3)
+-----------------------------------------------------------
+Accepted connection from 172.30.0.2, port 42980
+[  5] local 172.30.0.3 port 5201 connected to 172.30.0.2 port 42984
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  8.01 GBytes  68.7 Gbits/sec                  
+[  5]   1.00-2.00   sec  8.08 GBytes  69.4 Gbits/sec                  
+[  5]   2.00-3.00   sec  7.77 GBytes  66.7 Gbits/sec                  
+[  5]   3.00-4.00   sec  8.11 GBytes  69.7 Gbits/sec                  
+[  5]   4.00-5.00   sec  8.10 GBytes  69.6 Gbits/sec                  
+[  5]   5.00-6.00   sec  8.11 GBytes  69.7 Gbits/sec                  
+[  5]   6.00-7.00   sec  8.12 GBytes  69.8 Gbits/sec                  
+[  5]   7.00-8.00   sec  8.11 GBytes  69.6 Gbits/sec                  
+[  5]   8.00-9.00   sec  8.06 GBytes  69.3 Gbits/sec                  
+[  5]   9.00-10.00  sec  8.14 GBytes  69.9 Gbits/sec                  
+[  5]  10.00-10.00  sec   128 KBytes  3.42 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.00  sec  80.6 GBytes  69.2 Gbits/sec                  receiver

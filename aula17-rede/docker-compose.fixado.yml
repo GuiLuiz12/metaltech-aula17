@@ -1,0 +1,15 @@
+name: metaltech-aula17
+services:
+  servidor:
+    image: networkstatic/iperf3@sha256:5b99d62400dc1ffd8ac212dba1c576f27ce4df01d6cd3cba0fbdca6850ca1e90
+    command: ["-s"]
+    networks: [lab]
+  cliente:
+    image: nicolaka/netshoot@sha256:b09d9b21381f47a79b3cbcb30da25266dc17186ea00ae65e99fdc51396f48e70
+    command: ["sleep", "infinity"]
+    cap_add: [NET_ADMIN]
+    networks: [lab]
+networks:
+  lab:
+    driver: bridge
+    internal: true

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "docker",
+    "image",
+    "inspect",
+    "networkstatic/iperf3:latest",
+    "nicolaka/netshoot:latest"
+  ],
+  "command_shell": "docker image inspect networkstatic/iperf3:latest nicolaka/netshoot:latest",
+  "start": "2026-09-18T20:37:22.815427-03:00",
+  "end": "2026-09-18T20:37:22.830588-03:00",
+  "exit_code": 0
+}

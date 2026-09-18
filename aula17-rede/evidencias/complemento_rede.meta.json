@@ -1,0 +1,12 @@
+{
+  "command": [
+    "docker",
+    "network",
+    "inspect",
+    "metaltech-aula17_lab"
+  ],
+  "command_shell": "docker network inspect metaltech-aula17_lab",
+  "start": "2026-09-18T20:44:40.628944-03:00",
+  "end": "2026-09-18T20:44:40.641816-03:00",
+  "exit_code": 0
+}

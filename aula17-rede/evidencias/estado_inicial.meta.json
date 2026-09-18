@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "metaltech-aula17",
+    "-f",
+    "/home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml",
+    "ps",
+    "--format",
+    "json"
+  ],
+  "command_shell": "docker compose -p metaltech-aula17 -f /home/guiluiz12/Documents/Codex/2026-09-18/fa/outputs/aula17-rede/docker-compose.yml ps --format json",
+  "start": "2026-09-18T20:37:22.691460-03:00",
+  "end": "2026-09-18T20:37:22.738393-03:00",
+  "exit_code": 0
+}
